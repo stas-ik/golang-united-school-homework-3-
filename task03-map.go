@@ -6,16 +6,14 @@ func sortMapValues(input map[int]string) (result []string) {
 	keys := make([]int, len(input), len(input))
 	counter := 0
 
-	for i := range input 
-	{
+	for i := range input {
 		keys[counter] = i
 		counter++
 	}
 
 	sort.Ints(keys)
 
-	for i := 0; i < len(input); i++ 
-	{
+	for i := 0; i < len(input); i++ {
 		values[i] = input[keys[i]]
 	}
 
