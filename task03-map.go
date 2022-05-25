@@ -1,5 +1,9 @@
 package homework
 
+import (
+	"sort"
+)
+
 func sortMapValues(input map[int]string) (result []string) {
 
 	values := make([]string, len(input), len(input))
